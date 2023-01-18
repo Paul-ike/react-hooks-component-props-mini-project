@@ -1,15 +1,16 @@
 import React from "react";
 
-function About({
-    image= "https://via.placeholder.com/215",
-    text
-}) {
+function About (props){
+  
     return (
-        <aside>
-            <img src= { image } alt= "blog logo"/>
-            <p>{ text }</p>
-        </aside>
-    )
-}
+    <aside>
+        {/* the || we include the default */}
+        <img src= {props.image || "https://via.placeholder.com/215"} alt="blog logo"/>
+        <p>{props.about}</p>
 
+    </aside>)
+      
+   
+    
+}
 export default About

@@ -1,9 +1,10 @@
+
+
 import React from "react";
 
-function Header({ heading }) {
-    return (
-        <h1>{heading}</h1>
-    )
-}
+function Header(props){
+    
+    return (<header> <h1>{props.name}</h1></header>)
+  }
 
-export default Header;
+  export default Header
